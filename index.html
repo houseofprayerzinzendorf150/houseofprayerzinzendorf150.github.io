@@ -78,6 +78,16 @@
   Data via Jolpica-F1 (Ergast-compatible successor API) · Ergast's original API was retired at the end of 2024.
 </footer>
 
+<!-- Stats Modal -->
+<div id="statsModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+  <div id="modalOverlay" class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+  <div class="relative bg-[var(--surface)] border border-[var(--line)] rounded-lg max-w-xl w-full max-h-[85vh] overflow-y-auto fade-in">
+    <div class="h-1 stripe-accent w-full"></div>
+    <button id="modalClose" aria-label="Close" class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded text-[var(--text-dim)] hover:text-[var(--text)] hover:bg-[var(--surface-2)] text-xl leading-none transition-colors">&times;</button>
+    <div id="modalContent" class="p-6 sm:p-7"></div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
