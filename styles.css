@@ -1,0 +1,62 @@
+  :root{
+    --bg:#0a0a0b;
+    --surface:#141416;
+    --surface-2:#1c1c1f;
+    --line:#28282c;
+    --red:#e10600;
+    --red-dim:#8a0500;
+    --gold:#d4af37;
+    --silver:#c0c0c8;
+    --bronze:#cd7f32;
+    --text:#f2f2f0;
+    --text-dim:#9a9aa2;
+  }
+  html,body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;}
+  .font-display{font-family:'Titillium Web',sans-serif;}
+  .font-mono{font-family:'Roboto Mono',monospace;}
+  ::-webkit-scrollbar{height:8px;width:8px;}
+  ::-webkit-scrollbar-track{background:var(--surface);}
+  ::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px;}
+
+  .stripe-accent{
+    background:repeating-linear-gradient(115deg, var(--red) 0 18px, transparent 18px 26px);
+    opacity:0.9;
+  }
+  .tab-btn{position:relative;transition:color .2s ease;}
+  .tab-btn[data-active="true"]{color:var(--text);}
+  .tab-btn[data-active="true"]::after{
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--red);
+    box-shadow:0 0 10px rgba(225,6,0,.6);
+  }
+  .tab-btn::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:transparent;}
+
+  table{border-collapse:separate;border-spacing:0;}
+  tbody tr{border-bottom:1px solid var(--line);transition:background .15s ease;}
+  tbody tr:hover{background:var(--surface-2);}
+  .pos-badge{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:2rem;height:2rem;border-radius:4px;font-weight:700;font-family:'Roboto Mono',monospace;
+    background:var(--surface-2);color:var(--text-dim);border:1px solid var(--line);
+  }
+  .pos-1{background:linear-gradient(135deg,var(--gold),#8a6f1c);color:#111;border-color:var(--gold);}
+  .pos-2{background:linear-gradient(135deg,var(--silver),#6f6f77);color:#111;border-color:var(--silver);}
+  .pos-3{background:linear-gradient(135deg,var(--bronze),#6e4620);color:#111;border-color:var(--bronze);}
+  .row-podium-1{box-shadow:inset 3px 0 0 var(--gold);}
+  .row-podium-2{box-shadow:inset 3px 0 0 var(--silver);}
+  .row-podium-3{box-shadow:inset 3px 0 0 var(--bronze);}
+
+  .spinner{
+    width:44px;height:44px;border-radius:50%;
+    border:3px solid var(--line);border-top-color:var(--red);
+    animation:spin .8s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .fade-in{animation:fadeIn .35s ease both;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+
+  select{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+
+  .next-race-card{
+    background:radial-gradient(circle at top left, rgba(225,6,0,.18), transparent 60%), var(--surface);
+  }
