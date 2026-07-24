@@ -1,4 +1,4 @@
-  :root{
+:root{
     --bg:#0a0a0b;
     --surface:#141416;
     --surface-2:#1c1c1f;
@@ -60,3 +60,24 @@
   .next-race-card{
     background:radial-gradient(circle at top left, rgba(225,6,0,.18), transparent 60%), var(--surface);
   }
+
+  .clickable-row{cursor:pointer;}
+  .clickable-row:focus-visible{outline:2px solid var(--red);outline-offset:-2px;}
+  .clickable-row .chevron{opacity:0;transition:opacity .15s ease, transform .15s ease;transform:translateX(-3px);}
+  .clickable-row:hover .chevron, .clickable-row:focus-visible .chevron{opacity:1;transform:translateX(0);}
+
+  .stat-card{
+    background:var(--surface-2);border:1px solid var(--line);border-radius:6px;
+    padding:.75rem .9rem;
+  }
+  .stat-card .stat-label{font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-dim);}
+  .stat-card .stat-value{font-family:'Titillium Web',sans-serif;font-weight:900;font-size:1.4rem;line-height:1.2;margin-top:.15rem;}
+
+  .avatar-ring{
+    width:3.25rem;height:3.25rem;border-radius:9999px;
+    background:radial-gradient(circle at 30% 30%, rgba(225,6,0,.35), var(--surface-2));
+    border:1px solid var(--red);display:flex;align-items:center;justify-content:center;
+    font-family:'Titillium Web',sans-serif;font-weight:900;font-size:1.15rem;flex-shrink:0;
+  }
+
+  .modal-history tbody tr:last-child{border-bottom:none;}
