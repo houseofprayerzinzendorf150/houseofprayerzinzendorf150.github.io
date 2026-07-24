@@ -81,3 +81,11 @@
   }
 
   .modal-history tbody tr:last-child{border-bottom:none;}
+
+  .badge-cancelled{
+    display:inline-flex;align-items:center;gap:.3rem;
+    font-family:'Roboto Mono',monospace;font-size:10px;letter-spacing:.08em;font-weight:700;
+    text-transform:uppercase;color:var(--red);border:1px solid var(--red-dim);
+    background:rgba(225,6,0,.08);padding:.1rem .4rem;border-radius:3px;
+  }
+  .badge-cancelled::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--red);}
